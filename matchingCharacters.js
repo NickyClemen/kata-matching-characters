@@ -18,7 +18,7 @@ function containsUppercase(str) {
 
 const matchingCharacters = (str) => {
     if (containsUppercase(str)) {
-        throw new Error('string should contain lowercase');
+        throw new Error('string should contains lowercase');
     }
 
     let countWords = 0;
