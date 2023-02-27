@@ -6,6 +6,7 @@ const mockStrings = {
     caseThree: 'mmmerme',
     caseFour: 'abccdefghi',
     caseException: 'ASSeeyffgg',
+    errorMessage: 'string should contain lowercase',
 }
 
 describe('matchingCharacters test', () => {
@@ -30,6 +31,6 @@ describe('matchingCharacters test', () => {
     it('all values into string should be lowercase.', () => {
         expect(
             () => matchingCharacters(mockStrings.caseException),
-        ).toThrow('string should contain lowercase');
+        ).toThrow(mockStrings.errorMessage);
     })
 });
